@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pengumuman Admin Daily Study</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body id="body">
+        <div id="main" class="main">
+            <div id="main-background" class="main-background" style="opacity: 1;"></div>
+            <div id="main-route" class="main-route">
+                <div id="index" class="index">
+                    
+                    <div id="countdown-section" class="index-form" style="display: flex; flex-direction: column; text-align: center; border-radius: 10px; overflow: hidden;">
+                        <div class="index-accepted-header" style="justify-content: center; padding: 20px;">
+                            <h1 class="index-accepted-header-title-text" style="font-size: 1.5rem; text-align: center;">PENGUMUMAN REKRUTMEN</h1>
+                        </div>
+                        <div class="index-form-content" style="padding: 40px;">
+                            <span class="index-form-content-subtitle" style="font-size: 1.1rem; color: #fff; display: block; margin-bottom: 10px;">Hasil seleksi Admin Daily Study akan dibuka pada:</span>
+                            <div id="timer" style="font-size: 4rem; font-weight: 900; color: #88ccf0; text-shadow: 1px 1px 5px rgba(0,0,0,.2); margin: 20px 0; letter-spacing: 2px;">00:00:00</div>
+                            <span class="index-form-content-subtitle" style="margin-bottom: 0;">Hari ini pukul 14:30 WIB</span>
+                        </div>
+                    </div>
+
+                    <div id="index-form" class="index-form" style="display: none;">
+                        <form class="index-form-content" id="index-form-form">
+                            <h1 class="index-form-content-title">HASIL SELEKSI ADMIN DAILY STUDY <span class="tahun"></span></h1>
+                            <span class="index-form-content-subtitle">Masukkan Nomor Pendaftaran Anda.</span>
+                            <div class="index-form-content-form">
+                                <div class="index-form-content-form-field">
+                                    <span class="index-form-content-form-field-caption">Nomor Pendaftaran</span>
+                                    <input class="index-form-content-form-field-input" id="index-form-registration-number" type="tel" placeholder="Contoh: 1000000001" maxlength="10" required>
+                                </div>
+                            </div>
+                            <span class="index-form-content-alert" id="index-form-alert"></span>
+                            <div class="index-form-content-footer">
+                                <input type="button" class="index-form-content-footer-submit" id="index-form-submit" value="LIHAT HASIL SELEKSI" onclick="sendData()">
+                            </div>
+                        </form>
+                        <div class="index-form-border"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+        <script type="text/javascript" src="js/pengumuman.js"></script>
+        <script>
+            $('.tahun').text((new Date).getFullYear());
+        </script>
+    </body>
+</html>
