@@ -2,7 +2,7 @@
 function startCountdown() {
     var now = new Date();
     var targetTime = new Date();
-    targetTime.setHours(14, 30, 0, 0); // Set ke jam 14:00:00
+    targetTime.setHours(15, 0, 0, 0); // Set ke jam 14:00:00
 
     if (now >= targetTime) {
         document.getElementById("countdown-section").style.display = "none";
@@ -84,18 +84,18 @@ function sendData() {
 
 function rejected(data) {
     var tmpl =
-        '<div id="index-rejected" class="index-rejected">' +
+        '<div id="index-rejected" class="index-rejected" style="width: 90%; margin: 0 auto; box-sizing: border-box;">' +
         '<div class="index-rejected-header">' +
         '<div class="header-title">' +
-        '<h1 class="index-rejected-header-title-text">MOHON MAAF, ANDA DINYATAKAN TIDAK LULUS SELEKSI ADMIN</h1>' +
+        '<h1 class="index-rejected-header-title-text" style="font-size: clamp(1.2rem, 4vw, 1.5rem);">MOHON MAAF, ANDA DINYATAKAN TIDAK LULUS SELEKSI ADMIN</h1>' +
         '<span class="index-rejected-header-title-sub">TETAP SEMANGAT DAN JANGAN MENYERAH. TERUS TINGKATKAN KEMAMPUAN ANDA.</span>' +
         ' </div>' +
         '</div>' +
         '<div class="index-rejected-content">' +
-        '<div class="index-rejected-content-upper">' +
+        '<div class="index-rejected-content-upper" style="margin-bottom: 0;">' +
         '<div class="index-rejected-content-upper-bio">' +
         '<span class="index-rejected-content-upper-bio-nisn" id="index-rejected-nisn">NO DAFTAR : ' + data["no_peserta"] + '</span>' +
-        '<span class="index-rejected-content-upper-bio-name" id="index-rejected-name">' + data["nama"] + '</span>' +
+        '<span class="index-rejected-content-upper-bio-name" id="index-rejected-name" style="font-size: clamp(1.5rem, 5vw, 2.5rem); word-break: break-word;">' + data["nama"] + '</span>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -105,23 +105,23 @@ function rejected(data) {
 
 function accepted(data) {
     var tmpl =
-        '<div id="index-accepted" class="index-accepted">' +
+        '<div id="index-accepted" class="index-accepted" style="width: 90%; margin: 0 auto; box-sizing: border-box;">' +
         '<div class="index-accepted-header">' +
         '<div class="index-accepted-header-title">' +
-        '<h1 class="index-accepted-header-title-text">SELAMAT! ANDA DINYATAKAN LULUS SEBAGAI ADMIN DAILY STUDY</h1>' +
+        '<h1 class="index-accepted-header-title-text" style="font-size: clamp(1.2rem, 4vw, 1.5rem);">SELAMAT! ANDA DINYATAKAN LULUS SEBAGAI ADMIN DAILY STUDY</h1>' +
         '</div>' +
         '</div>' +
         '<div class="index-accepted-content">' +
         '<div class="index-accepted-content-upper">' +
         '<div class="index-accepted-content-upper-bio">' +
         `<span class="index-accepted-content-upper-bio-nisn" id="index-accepted-nisn">` + ` NOMOR PENDAFTARAN: ` + data["no_peserta"] + `</span>` +
-        '<span class="index-accepted-content-upper-bio-name" id="index-accepted-name">' + data["nama"] + '</span>' +
+        '<span class="index-accepted-content-upper-bio-name" id="index-accepted-name" style="font-size: clamp(1.5rem, 5vw, 2.5rem); word-break: break-word;">' + data["nama"] + '</span>' +
         '<span class="index-accepted-content-upper-bio-program" id="index-accepted-program">Posisi: ' + data["posisi"] + '</span>' +
         '</div>' +
         '</div>' +
-        '<div class="index-accepted-content-lower">' +
-        '<div class="index-accepted-content-lower-column index-accepted-content-lower-column-50">' +
-        '<div class="index-accepted-content-lower-column-note" style="margin-top: 20px;">' +
+        '<div class="index-accepted-content-lower" style="display: block;">' +
+        '<div class="index-accepted-content-lower-column" style="width: 100%; padding: 0;">' +
+        '<div class="index-accepted-content-lower-column-note" style="margin-top: 10px; text-align: left; width: 100%; box-sizing: border-box;">' +
         '<span class="index-accepted-content-lower-column-note-title">Silakan lakukan konfirmasi.</span>'+
         '<span class="index-accepted-content-lower-column-note-subtitle">Informasi onboarding dan pendaftaran ulang tim Admin dapat dihubungi melalui grup koordinasi.</span>' +
         '</div>' +
