@@ -1,0 +1,27 @@
+[
+    {
+        "diterima": "1",
+        "no_peserta": "1000000001",
+        "nama": "LISTY",
+        "posisi": "Admin Daily Study"
+    },
+    
+    {
+        "diterima": "0",
+        "no_peserta": "1000000003",
+        "nama": "APIPA",
+        "posisi": "Admin Daily Study"
+    },
+    {
+        "diterima": "1",
+        "no_peserta": "1000000004",
+        "nama": "BILLA",
+        "posisi": "Admin Daily Study"
+    },
+    {
+        "diterima": "0",
+        "no_peserta": "1000000005",
+        "nama": "WENDY",
+        "posisi": "Admin Daily Study"
+    }
+]
