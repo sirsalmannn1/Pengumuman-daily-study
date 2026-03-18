@@ -14,30 +14,30 @@
             <div id="main-route" class="main-route">
                 <div id="index" class="index">
                     
-                    <div id="countdown-section" class="index-form" style="display: flex; flex-direction: column; text-align: center; border-radius: 10px; overflow: hidden;">
+                    <div id="countdown-section" class="index-form" style="display: flex; flex-direction: column; text-align: center; border-radius: 10px; overflow: hidden; width: 90%; max-width: 700px; margin: 0 auto;">
                         <div class="index-accepted-header" style="justify-content: center; padding: 20px;">
                             <h1 class="index-accepted-header-title-text" style="font-size: 1.5rem; text-align: center;">PENGUMUMAN REKRUTMEN</h1>
                         </div>
-                        <div class="index-form-content" style="padding: 40px;">
-                            <span class="index-form-content-subtitle" style="font-size: 1.1rem; color: #fff; display: block; margin-bottom: 10px;">Hasil seleksi Admin Daily Study akan dibuka pada:</span>
-                            <div id="timer" style="font-size: 4rem; font-weight: 900; color: #88ccf0; text-shadow: 1px 1px 5px rgba(0,0,0,.2); margin: 20px 0; letter-spacing: 2px;">00:00:00</div>
-                            <span class="index-form-content-subtitle" style="margin-bottom: 0;">Hari ini pukul 14:30 WIB</span>
+                        <div class="index-form-content" style="padding: 30px 20px;">
+                            <span class="index-form-content-subtitle" style="font-size: clamp(0.9rem, 3vw, 1.1rem); color: #fff; display: block; margin-bottom: 10px;">Hasil seleksi Admin Daily Study akan dibuka pada:</span>
+                            <div id="timer" style="font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 900; color: #88ccf0; text-shadow: 1px 1px 5px rgba(0,0,0,.2); margin: 20px 0; letter-spacing: 2px;">00:00:00</div>
+                            <span class="index-form-content-subtitle" style="margin-bottom: 0; font-size: clamp(0.8rem, 2.5vw, 1rem);">Hari ini pukul 15:00 WIB</span>
                         </div>
                     </div>
 
-                    <div id="index-form" class="index-form" style="display: none;">
+                    <div id="index-form" class="index-form" style="display: none; width: 90%; max-width: 700px; margin: 0 auto;">
                         <form class="index-form-content" id="index-form-form">
-                            <h1 class="index-form-content-title">HASIL SELEKSI ADMIN DAILY STUDY <span class="tahun"></span></h1>
+                            <h1 class="index-form-content-title" style="font-size: clamp(1.5rem, 5vw, 2.5rem);">HASIL SELEKSI ADMIN DAILY STUDY <span class="tahun"></span></h1>
                             <span class="index-form-content-subtitle">Masukkan Nomor Pendaftaran Anda.</span>
                             <div class="index-form-content-form">
-                                <div class="index-form-content-form-field">
+                                <div class="index-form-content-form-field" style="margin-bottom: 0;">
                                     <span class="index-form-content-form-field-caption">Nomor Pendaftaran</span>
-                                    <input class="index-form-content-form-field-input" id="index-form-registration-number" type="tel" placeholder="Contoh: 1000000001" maxlength="10" required>
+                                    <input class="index-form-content-form-field-input" id="index-form-registration-number" type="tel" placeholder="Contoh: 1000000001" maxlength="10" required style="margin-bottom: 15px;">
                                 </div>
                             </div>
                             <span class="index-form-content-alert" id="index-form-alert"></span>
                             <div class="index-form-content-footer">
-                                <input type="button" class="index-form-content-footer-submit" id="index-form-submit" value="LIHAT HASIL SELEKSI" onclick="sendData()">
+                                <input type="button" class="index-form-content-footer-submit" id="index-form-submit" value="LIHAT HASIL SELEKSI" onclick="sendData()" style="width: 100%; max-width: 250px;">
                             </div>
                         </form>
                         <div class="index-form-border"></div>
