@@ -2,7 +2,7 @@
 function startCountdown() {
     var now = new Date();
     var targetTime = new Date();
-    targetTime.setHours(15, 0, 0, 0); // Set ke jam 14:00:00
+    targetTime.setHours(14, 40, 0, 0); // Set ke jam 14:00:00
 
     if (now >= targetTime) {
         document.getElementById("countdown-section").style.display = "none";
